@@ -1,0 +1,50 @@
++--------+-----------+----------------------------------+----------------------+-----------------------------------------------------+--------------+
+| Domain | Method    | URI                              | Name                 | Action                                              | Middleware   |
++--------+-----------+----------------------------------+----------------------+-----------------------------------------------------+--------------+
+|        | GET|HEAD  | /                                |                      | Closure                                             | web          |
+|        | GET|HEAD  | api/user                         |                      | Closure                                             | api,auth:api |
+|        | GET|HEAD  | apoint                           | apoint.index         | App\Http\Controllers\ApointmentController@index     | web          |
+|        | POST      | apoint                           | apoint.store         | App\Http\Controllers\ApointmentController@store     | web          |
+|        | GET|HEAD  | apoint/create                    | apoint.create        | App\Http\Controllers\ApointmentController@create    | web          |
+|        | DELETE    | apoint/{apoint}                  | apoint.destroy       | App\Http\Controllers\ApointmentController@destroy   | web          |
+|        | GET|HEAD  | apoint/{apoint}                  | apoint.show          | App\Http\Controllers\ApointmentController@show      | web          |
+|        | PUT|PATCH | apoint/{apoint}                  | apoint.update        | App\Http\Controllers\ApointmentController@update    | web          |
+|        | GET|HEAD  | apoint/{apoint}/edit             | apoint.edit          | App\Http\Controllers\ApointmentController@edit      | web          |
+|        | GET|HEAD  | available                        | available.index      | App\Http\Controllers\AvailableController@index      | web          |
+|        | POST      | available                        | available.store      | App\Http\Controllers\AvailableController@store      | web          |
+|        | GET|HEAD  | available/create                 | available.create     | App\Http\Controllers\AvailableController@create     | web          |
+|        | POST      | available/datecheck              |                      | App\Http\Controllers\AvailableController@dateCheck  | web          |
+|        | GET|HEAD  | available/{available}            | available.show       | App\Http\Controllers\AvailableController@show       | web          |
+|        | PUT|PATCH | available/{available}            | available.update     | App\Http\Controllers\AvailableController@update     | web          |
+|        | DELETE    | available/{available}            | available.destroy    | App\Http\Controllers\AvailableController@destroy    | web          |
+|        | GET|HEAD  | available/{available}/edit       | available.edit       | App\Http\Controllers\AvailableController@edit       | web          |
+|        | GET|HEAD  | medication                       | medication.index     | App\Http\Controllers\MedicationController@index     | web          |
+|        | POST      | medication                       | medication.store     | App\Http\Controllers\MedicationController@store     | web          |
+|        | GET|HEAD  | medication/create                | medication.create    | App\Http\Controllers\MedicationController@create    | web          |
+|        | GET|HEAD  | medication/{medication}          | medication.show      | App\Http\Controllers\MedicationController@show      | web          |
+|        | DELETE    | medication/{medication}          | medication.destroy   | App\Http\Controllers\MedicationController@destroy   | web          |
+|        | PUT|PATCH | medication/{medication}          | medication.update    | App\Http\Controllers\MedicationController@update    | web          |
+|        | GET|HEAD  | medication/{medication}/edit     | medication.edit      | App\Http\Controllers\MedicationController@edit      | web          |
+|        | POST      | prescription                     | prescription.store   | App\Http\Controllers\PrescriptionController@store   | web          |
+|        | GET|HEAD  | prescription                     | prescription.index   | App\Http\Controllers\PrescriptionController@index   | web          |
+|        | GET|HEAD  | prescription/create              | prescription.create  | App\Http\Controllers\PrescriptionController@create  | web          |
+|        | GET|HEAD  | prescription/{prescription}      | prescription.show    | App\Http\Controllers\PrescriptionController@show    | web          |
+|        | PUT|PATCH | prescription/{prescription}      | prescription.update  | App\Http\Controllers\PrescriptionController@update  | web          |
+|        | DELETE    | prescription/{prescription}      | prescription.destroy | App\Http\Controllers\PrescriptionController@destroy | web          |
+|        | GET|HEAD  | prescription/{prescription}/edit | prescription.edit    | App\Http\Controllers\PrescriptionController@edit    | web          |
+|        | GET|HEAD  | results                          | results.index        | App\Http\Controllers\ResultsController@index        | web          |
+|        | POST      | results                          | results.store        | App\Http\Controllers\ResultsController@store        | web          |
+|        | GET|HEAD  | results/create                   | results.create       | App\Http\Controllers\ResultsController@create       | web          |
+|        | PUT|PATCH | results/{result}                 | results.update       | App\Http\Controllers\ResultsController@update       | web          |
+|        | GET|HEAD  | results/{result}                 | results.show         | App\Http\Controllers\ResultsController@show         | web          |
+|        | DELETE    | results/{result}                 | results.destroy      | App\Http\Controllers\ResultsController@destroy      | web          |
+|        | GET|HEAD  | results/{result}/edit            | results.edit         | App\Http\Controllers\ResultsController@edit         | web          |
+|        | GET|HEAD  | user                             | user.index           | App\Http\Controllers\UsersController@index          | web          |
+|        | POST      | user                             | user.store           | App\Http\Controllers\UsersController@store          | web          |
+|        | GET|HEAD  | user/create                      | user.create          | App\Http\Controllers\UsersController@create         | web          |
+|        | POST      | user/login                       |                      | App\Http\Controllers\UsersController@login          | web          |
+|        | PUT|PATCH | user/{user}                      | user.update          | App\Http\Controllers\UsersController@update         | web          |
+|        | GET|HEAD  | user/{user}                      | user.show            | App\Http\Controllers\UsersController@show           | web          |
+|        | DELETE    | user/{user}                      | user.destroy         | App\Http\Controllers\UsersController@destroy        | web          |
+|        | GET|HEAD  | user/{user}/edit                 | user.edit            | App\Http\Controllers\UsersController@edit           | web          |
++--------+-----------+----------------------------------+----------------------+-----------------------------------------------------+--------------+

@@ -1,0 +1,22 @@
+Please follow the instructions step by step
+
+Pre-requisites - You need to have installed xampp on your pc and also composer , if not please install both the softwares and then follow the instructions
+
+1.) Open terminal in the root folder 
+2.) type "composer install" and hit enter
+3.) After the completion of step 2 go to the .env file in the root folder and modify the credentials for database connection
+    These lines needs to be changed according to your crendentials
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=oversurgery
+    DB_USERNAME=root
+    DB_PASSWORD=
+4.) If you have changed the db_database field , then create a database by that name in your phpMyAdmin.
+5.) Go back to terminal and type "php artisan migrate" and hit enter.
+6.) After you see "Migration successfull" please go to step 7.
+7.) Now you must see some tables in your database , if not then you must have some error with your database setup
+8.) Please fill up the database tables with some dummy values.
+9.) If everything is okay up untill now , then go to step 10 else please follow the steps again.
+10.) Now go back to the terminal and type "php artisan serve" and hit enter.
+11.) if no error then you may go to your browser and type "http://localhost:8000" and the login page should show up.   
